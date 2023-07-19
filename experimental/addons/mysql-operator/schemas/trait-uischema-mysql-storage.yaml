@@ -1,0 +1,73 @@
+- jsonKey: type
+  sort: 1
+  validate: 
+    required: true
+    defaultValue: pvc
+    options:
+      - label: Persistent Volume
+        value: pvc
+      - label: Host Path
+        value: hostPath  
+- jsonKey: emptyDir
+  sort: 3
+  uiType: Ignore
+  # disable: true
+- jsonKey: hostPath
+  sort: 5
+  uiType: Ignore
+  validate:
+    required: true  
+  conditions:
+    - jsonKey: type
+      op: "=="
+      value: "hostPath"
+  subParameters:
+    - jsonKey: path
+      sort: 1
+    - jsonKey: type
+      sort: 3
+- jsonKey: pvc
+  sort: 7
+  uiType: Ignore
+  label: Persistent Volume
+  validate:
+    required: true  
+  conditions:
+    - jsonKey: type
+      op: "=="
+      value: "pvc"
+  subParameters:
+    - jsonKey: storage
+      sort: 1
+      uiType: DiskNumber
+      label: Request Storage
+      style:
+        colSpan: 24
+    - jsonKey: accessModes
+      sort: 3
+      style:
+        colSpan: 24
+    - jsonKey: volumeMode
+      sort: 5
+      style:
+        colSpan: 24
+    - jsonKey: volumeName
+      sort: 7
+      style:
+        colSpan: 24
+    - jsonKey: storageClassName
+      sort: 9
+      style:
+        colSpan: 24
+    - jsonKey: provisioner
+      sort: 11
+      style:
+        colSpan: 24
+    - jsonKey: dataSource
+      sort: 13
+      style:
+        colSpan: 24
+    - jsonKey: selector
+      sort: 15
+      style:
+        colSpan: 24
