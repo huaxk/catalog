@@ -1,0 +1,9 @@
+description: Convert between various proxy subscription formats.
+icon: ""
+invisible: false
+name: subconverter
+tags:
+- proxy
+- subscribe
+- converter
+version: 0.0.1
