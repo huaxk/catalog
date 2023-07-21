@@ -1,0 +1,13 @@
+annotations:
+  system.kubernetes: '>=1.19'
+  system.vela: '>=v1.5.0'
+apiVersion: v2
+appVersion: 0.0.1
+description: Redis Operator creates/configures/manages high availability redis with
+  sentinel automatic failover atop Kubernetes.
+home: https://github.com/spotahome/redis-operator
+keywords:
+- redis
+name: redis-operator
+type: library
+version: 0.0.1

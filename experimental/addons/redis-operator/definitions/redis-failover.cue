@@ -43,6 +43,9 @@ template: {
 						}
 					}
 				}
+				if parameter.customConfig != _|_ {
+					customConfig: parameter.customConfig
+				}
 			}
 			sentinel: {
 				replicas: parameter.replicas
@@ -79,5 +82,7 @@ template: {
 		}
 		//+usage=Provide a Redis password to enable authorization.
 		password?: string
+		//+usage=Provide custom redis config.
+		customConfig?: [...string]
 	}
 }
