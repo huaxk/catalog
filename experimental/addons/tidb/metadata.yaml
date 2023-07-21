@@ -1,0 +1,9 @@
+description: An addon for KubeVela.
+icon: ""
+invisible: false
+name: tidb-operator
+tags:
+  - tidb-operator
+version: v1.4.1
+dependencies:
+  - name: fluxcd
