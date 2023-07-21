@@ -7,7 +7,7 @@ gitea: {
 		repoType:        "helm"
 		url:             "https://dl.gitea.io/charts"
 		chart:           "gitea"
-		version:         "7.0.4"
+		version:         "8.3.0"
 		targetNamespace: parameter.namespace
 		releaseName:     "gitea"
 		values: {

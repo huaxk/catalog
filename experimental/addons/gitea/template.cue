@@ -41,10 +41,5 @@ output: {
 					}
 				}
 			}]
-		workflow: steps: [{
-			type: "deploy"
-			name: "deploy-gitea"
-			properties: policies: ["deploy-topology"]
-		}]
 	}
 }
