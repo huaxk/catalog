@@ -1,0 +1,11 @@
+description: provides git server by gitea.
+icon: "https://docs.gitea.io/images/gitea.png"
+invisible: false
+name: gitea
+version: 0.0.1
+url: https://docs.gitea.io/
+tags:
+  - git
+  - gitea
+system:
+  vela: ">=v1.6.0"
