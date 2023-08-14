@@ -1,0 +1,11 @@
+name: registry-proxy
+description: An HTTPS Proxy for Docker providing centralized configuration and caching of any registry (quay.io, DockerHub, k8s.gcr.io)
+tags:
+- registry
+- proxy
+version: 0.0.1
+url: https://kubevela.io
+
+system:
+  vela: ">=v1.5.0"
+  kubernetes: ">=1.19"
